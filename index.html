@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mera Portfolio</title>
+    <title>Ammar Yasir - Portfolio</title>
     
     <style>
         * {
@@ -17,13 +17,14 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
         header {
             background: #2c3e50;
             color: white;
             padding: 1rem 0;
-            position: fixed; /* Header ko upar fix rakhega */
+            position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
@@ -37,40 +38,34 @@
 
         nav ul {
             display: flex;
-            list-style: none; /* Bullet points hatane ke liye */
+            list-style: none;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
             margin-left: 15px;
-            font-size: 14px; /* Mobile ke liye font thoda adjust kiya */
+            font-size: 14px;
             font-weight: bold;
         }
 
         /* Hero Section Styling */
         .hero {
-            height: 100vh; /* Poori screen ki height */
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            /* Background Image ya Color */
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://codeyogi.io/coffee.jpg);
             background-size: cover;
+            background-attachment: fixed;
             color: white;
             padding: 20px;
         }
 
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .highlight {
-            color: #3498db; /* Neela rang */
-        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .highlight { color: #3498db; }
 
         .hero button {
             padding: 10px 20px;
@@ -83,16 +78,25 @@
             margin-top: 15px;
         }
 
-        /* Skills Section */
-        #skills {
-            padding: 80px 20px 50px; /* Upar thoda space diya header ke liye */
+        /* Common Section Styling */
+        section {
+            padding: 60px 20px;
             text-align: center;
+            border-bottom: 1px solid #ddd;
         }
 
+        h2 {
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        /* Skills Section */
         .skill-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Mobile par box neeche aa jayein */
+            flex-wrap: wrap;
             gap: 15px;
             margin-top: 20px;
         }
@@ -102,7 +106,7 @@
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            width: 150px; /* Mobile ke liye chota size */
+            width: 150px;
             font-weight: bold;
             transition: 0.3s;
         }
@@ -113,22 +117,33 @@
             color: white;
         }
 
+        /* Text Content Styles */
+        .text-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .text-content p { margin-bottom: 15px; }
+
         /* Contact Section */
         #contact {
-            background: #eee;
-            padding: 50px 20px;
-            text-align: center;
+            background: #2c3e50;
+            color: white;
         }
+        #contact h2 { color: white; }
 
         footer {
             text-align: center;
             padding: 20px;
-            background: #2c3e50;
-            color: white;
-            margin-top: auto;
+            background: #1a252f;
+            color: #bbb;
         }
 
-        /* Chote mobile screen ke liye adjustment */
         @media (max-width: 600px) {
             .hero h1 { font-size: 1.8rem; }
             nav ul li a { margin-left: 10px; font-size: 12px; }
@@ -141,17 +156,19 @@
         <nav>
             <div class="logo">My Portfolio</div>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#about-detail">About</a></li>
+                <li><a href="#privacy">Privacy</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about" class="hero">
-        <h1>hello, I am <span class="highlight">Ammar Yasir</span></h1>
-        <p> I am a Web Designer and I have completed. <b>O Level (M1, M2).</b>  </p>
-        <button onclick="window.location.href='#contact'"> <b> [Contact Me] </b> </button>
+    <section id="home" class="hero">
+        <h1>Hello, I am <span class="highlight">Ammar Yasir</span></h1>
+        <p>I am a Web Designer and have completed <b>O Level (M1, M2)</b>.</p>
+        <button onclick="window.location.href='#contact'">Contact Me</button>
     </section>
 
     <section id="skills">
@@ -168,15 +185,41 @@
         </div>
     </section>
 
+    <section id="about-detail" style="background-color: #fff;">
+        <h2>About Me</h2>
+        <div class="text-content">
+            <p>Hello! My name is <strong>Ammar Yasir</strong>. I am from Varanasi, Uttar Pradesh.</p>
+            <p>I have completed <strong>O Level (M1 and M2)</strong> in my studies, gaining in-depth knowledge of IT Tools and Web Designing. Additionally, I have completed <strong>ADCA</strong> and <strong>CCC</strong> certifications.</p>
+            <p>I am a passionate Web Developer who loves learning new technologies. My goal is to create simple and effective websites that help people. Currently, I am focusing on HTML, CSS, and Web Publishing.</p>
+        </div>
+    </section>
+
+    <section id="privacy" style="background-color: #f9f9f9;">
+        <h2>Privacy Policy</h2>
+        <div class="text-content">
+            <p><strong>Last Updated: 2026</strong></p>
+            <p>My Portfolio (Ammar Yasir) respects your privacy. This Privacy Policy explains how we handle data when you visit our website.</p>
+            
+            <h3>1. Information We Collect</h3>
+            <p>We do not directly collect any personal data unless you voluntarily contact us via the Contact form or Email.</p>
+
+            <h3>2. Log Files</h3>
+            <p>Like standard hosting services, this website may use log files (such as IP address, browser type) used solely for site performance analysis.</p>
+
+            <h3>3. Contact Us</h3>
+            <p>If you have any questions or concerns regarding privacy, please feel free to reach out to us via the contact details provided below.</p>
+        </div>
+    </section>
+
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: ay24032008@gmail.com</p>
-        <p>Phone: +91 6386084719,7499208526</p>
-        <p>Address: Varanasi, Uttar Pradesh</p>
+        <p><strong>Email:</strong> ay24032008@gmail.com</p>
+        <p><strong>Phone:</strong> +91 6386084719, 7499208526</p>
+        <p><strong>Address:</strong> Varanasi, Uttar Pradesh</p>
     </section>
 
     <footer>
-        <p>© 2026 - Mera Pehla Web Project</p>
+        <p>© 2026 Ammar Yasir - All Rights Reserved.</p>
     </footer>
 
 </body>
