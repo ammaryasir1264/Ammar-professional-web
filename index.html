@@ -3,151 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ammar Yasir - Portfolio</title>
-    
+    <title>Home - Ammar Yasir</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        /* Hero Section Styling */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://codeyogi.io/coffee.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-            padding: 20px;
-        }
-
+        /* CSS Same Rahega */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
+        header { background: #2c3e50; color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-around; align-items: center; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li a { color: white; text-decoration: none; margin-left: 15px; font-size: 14px; font-weight: bold; }
+        nav ul li a:hover { color: #3498db; }
+        
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://codeyogi.io/coffee.jpg); background-size: cover; background-attachment: fixed; color: white; padding: 20px; }
         .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
         .highlight { color: #3498db; }
-
-        .hero button {
-            padding: 10px 20px;
-            background: #3498db;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            border-radius: 5px;
-            margin-top: 15px;
-        }
-
-        /* Common Section Styling */
-        section {
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        h2 {
-            margin-bottom: 30px;
-            color: #2c3e50;
-            font-size: 2rem;
-            text-transform: uppercase;
-        }
-
-        /* Skills Section */
-        .skill-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .skill-box {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            width: 150px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .skill-box:hover {
-            transform: translateY(-5px);
-            background: #3498db;
-            color: white;
-        }
-
-        /* Text Content Styles */
-        .text-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: left;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        
-        .text-content p { margin-bottom: 15px; }
-
-        /* Contact Section */
-        #contact {
-            background: #2c3e50;
-            color: white;
-        }
-        #contact h2 { color: white; }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1a252f;
-            color: #bbb;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 1.8rem; }
-            nav ul li a { margin-left: 10px; font-size: 12px; }
-        }
+        .hero button { padding: 10px 20px; background: #3498db; color: white; border: none; cursor: pointer; font-size: 1rem; border-radius: 5px; margin-top: 15px; }
+        footer { text-align: center; padding: 20px; background: #1a252f; color: #bbb; position: fixed; bottom: 0; width: 100%; }
     </style>
 </head>
 <body>
@@ -156,66 +27,18 @@
         <nav>
             <div class="logo">My Portfolio</div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about-detail">About</a></li>
-                <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
+    <section class="hero">
         <h1>Hello, I am <span class="highlight">Ammar Yasir</span></h1>
         <p>I am a Web Designer and have completed <b>O Level (M1, M2)</b>.</p>
-        <button onclick="window.location.href='#contact'">Contact Me</button>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skill-container">
-            <div class="skill-box">HTML5 & CSS3</div>
-            <div class="skill-box">Web Design (M2)</div>
-            <div class="skill-box">IT Tools (M1)</div>
-            <div class="skill-box">MS Office</div>
-            <div class="skill-box">Typing</div>
-            <div class="skill-box">ADCA</div>
-            <div class="skill-box">CCC</div>
-            <div class="skill-box">Internet Surfing</div>
-        </div>
-    </section>
-
-    <section id="about-detail" style="background-color: #fff;">
-        <h2>About Me</h2>
-        <div class="text-content">
-            <p>Hello! My name is <strong>Ammar Yasir</strong>. I am from Varanasi, Uttar Pradesh.</p>
-            <p>I have completed <strong>O Level (M1 and M2)</strong> in my studies, gaining in-depth knowledge of IT Tools and Web Designing. Additionally, I have completed <strong>ADCA</strong> and <strong>CCC</strong> certifications.</p>
-            <p>I am a passionate Web Developer who loves learning new technologies. My goal is to create simple and effective websites that help people. Currently, I am focusing on HTML, CSS, and Web Publishing.</p>
-        </div>
-    </section>
-
-    <section id="privacy" style="background-color: #f9f9f9;">
-        <h2>Privacy Policy</h2>
-        <div class="text-content">
-            <p><strong>Last Updated: 2026</strong></p>
-            <p>My Portfolio (Ammar Yasir) respects your privacy. This Privacy Policy explains how we handle data when you visit our website.</p>
-            
-            <h3>1. Information We Collect</h3>
-            <p>We do not directly collect any personal data unless you voluntarily contact us via the Contact form or Email.</p>
-
-            <h3>2. Log Files</h3>
-            <p>Like standard hosting services, this website may use log files (such as IP address, browser type) used solely for site performance analysis.</p>
-
-            <h3>3. Contact Us</h3>
-            <p>If you have any questions or concerns regarding privacy, please feel free to reach out to us via the contact details provided below.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p><strong>Email:</strong> ay24032008@gmail.com</p>
-        <p><strong>Phone:</strong> +91 6386084719, 7499208526</p>
-        <p><strong>Address:</strong> Varanasi, Uttar Pradesh</p>
+        <button onclick="window.location.href='contact.html'">Contact Me</button>
     </section>
 
     <footer>
